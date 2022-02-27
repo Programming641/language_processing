@@ -16,6 +16,10 @@ in windows 10
 
 py get_htmlpages.py
 
+it gets all reference html files in the page.
+
+![image](https://user-images.githubusercontent.com/56218301/155876773-2b91af5d-4e9c-49ed-b86b-268e3472ea93.png)
+
 
 then you execute the get_def_sent.py
 

@@ -6,7 +6,8 @@
 
 inside get_htmlpages.py, provide the wikipedia's page that you want to get definitions for.
 
-![image](https://user-images.githubusercontent.com/56218301/155876343-e08dec50-e050-46e0-8ec9-70286d9c1690.png)
+![image](https://user-images.githubusercontent.com/56218301/155876961-f5a19f11-167a-4962-94d1-7e1fd1827135.png)
+
 
 above example gets definitions for "Machine element" page
 

@@ -3,11 +3,11 @@ import re
 
 domain_url = "https://en.wikipedia.org"
 
-machining_url = "https://en.wikipedia.org/wiki/Machine element"
+E_url = "https://en.wikipedia.org/wiki/Engineering"
 
-title = "Machining"
+title = "Engineering"
 
-res = requests.get(machining_url)
+res = requests.get(E_url)
 response = res.content
 
 res_str = response.decode("utf-8")
@@ -30,7 +30,7 @@ for line in lines:
       # search ends
       break
 
-   exclude_chars = [ "#", "jpg", "png", "edit" ]
+   exclude_chars = [ "#", "jpg", "png", "edit", ":", "%" ]
    if search:
       href_ptn = "<\S.*href\S.*\"\S.*"
       results = re.findall(href_ptn, line)

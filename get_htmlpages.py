@@ -30,7 +30,7 @@ for line in lines:
       # search ends
       break
 
-   exclude_chars = [ "#", "jpg", "png", "edit", ":", "%" ]
+   exclude_chars = [ "#", "jpg", "png", "edit", ":", "%", "," ]
    if search:
       href_ptn = "<\S.*href\S.*\"\S.*"
       results = re.findall(href_ptn, line)

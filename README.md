@@ -4,9 +4,11 @@
 
 # how to use
 
-inside get_htmlpages.py, provide the wikipedia's page that you want to get definitions for.
+inside get_htmlpages.py, provide the wikipedia's page that you want to get definitions for. and change the title of the page.
 
-![image](https://user-images.githubusercontent.com/56218301/155876961-f5a19f11-167a-4962-94d1-7e1fd1827135.png)
+
+![image](https://user-images.githubusercontent.com/56218301/155877506-076b08ee-36d9-448e-a309-49be14b337bd.png)
+
 
 
 above example gets definitions for "Machine element" page

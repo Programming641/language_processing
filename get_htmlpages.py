@@ -3,14 +3,17 @@ import re
 
 domain_url = "https://en.wikipedia.org"
 
-E_url = "https://en.wikipedia.org/wiki/Engineering"
+main_url = "https://en.wikipedia.org/wiki/Engineer"
 
-title = "Engineering"
+title = "Engineer"
 
-res = requests.get(E_url)
+res = requests.get(main_url)
 response = res.content
 
 res_str = response.decode("utf-8")
+
+print(res_str)
+
 
 filename = "html/" + title + ".html"
 
@@ -41,11 +44,11 @@ for line in lines:
             if check_char in each_m:
                # we don't want # in href because it is a link to the section of the current html page.
                # also we don't want link to the images
-               # exclude edit too.
+               # exclude edit, ":", "%", and "," too.
                exclude_char_check = True
 
          if not exclude_char_check:
-            # link is not for section of the page, images or edit
+            # link is not for section of the page, images or edit etc....
             print(each_m)
 
             # now we proceed to extract reference pages
@@ -77,11 +80,6 @@ for line in lines:
                html_f = open(filename, mode='w', encoding="utf_8")
                html_f.write(res_str)
                html_f.close()
-
-
-
-
-
 
 
 

@@ -4,13 +4,15 @@
 
 ## Instructions
 
-dependencies
+### dependencies
 word2number, nltk
 
 make sure to pip install the dependencies
+
 for nltk, you also need to download some stuff. 
 
 steps for downloading neccessary stuff for nltk
+
 run python interpreter.
 
 On windows,

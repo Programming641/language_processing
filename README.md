@@ -11,15 +11,18 @@ make sure to pip install the dependencies
 
 for nltk, you also need to download some stuff. 
 
-steps for downloading neccessary stuff for nltk
+### steps for downloading neccessary stuff for nltk
 
 run python interpreter.
 
 On windows,
+```
 py
-
+```
 On linux,
+```
 python3 or python
+```
 
 then do the following in the interpreter.
 ```

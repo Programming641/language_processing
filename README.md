@@ -22,10 +22,10 @@ On linux,
 python3 or python
 
 then do the following in the interpreter.
-
+"""
   >>> import nltk
   >>> nltk.download('punkt')
-
+"""
 
 To do. I will write the details later on. For now, you can read the source code and execute it to see how it works.
 

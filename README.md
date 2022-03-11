@@ -5,8 +5,8 @@
 ## Instructions
 
 ### dependencies
-⋅⋅*word2number
-⋅⋅*nltk
+*word2number
+*nltk
 
 make sure to pip install the dependencies
 

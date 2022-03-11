@@ -294,7 +294,6 @@ class Sentence_Processor:
          
          in_pos += 1   
          
-      sys.exit()
       
    
    def a(words):

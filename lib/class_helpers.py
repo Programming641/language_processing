@@ -1,11 +1,16 @@
 import nltk
 
-from word_classes import def_count, def_human, def_time, def_food, def_date, def_common_word
+from word_classes import def_count, def_human, def_time, def_food, def_date, def_common_word, def_word, def_common_vocab1, def_animate_pronoun
 
 avail_classes = { "Def_Count": def_count.Def_Count, "Most": def_count.Most, "Everyday_Life": def_date.Everyday_Life, 
                     "Daily_Life": def_date.Daily_Life, "Routine_Life": def_date.Routine_Life, "Human": def_human.Human, 
                     "People": def_human.People, "Def_Time": def_time.Def_Time, "Daily_Basis": def_time.Daily_Basis, "Food": def_food.Food, 
-                    "Meal": def_food.Meal, "Day": def_date.Def_Day, "Def_In": def_common_word.Def_In, "Def_A": def_common_word.Def_A  }
+                    "Meal": def_food.Meal, "Day": def_date.Def_Day, "Def_In": def_common_word.Def_In, "Def_A": def_common_word.Def_A, "Some": def_count.Some,
+                    "Key": def_common_vocab1.Key, "Keys": def_common_vocab1.Keys, "Phrase": def_word.Phrase, "Phrases": def_word.Phrases, "There": def_common_word.There,
+                    "Use": def_common_vocab1.Use, "Useful": def_common_vocab1.Useful, "Def_Is": def_common_word.Def_Is, "Def_Are": def_common_word.Def_Are,
+                    "Def_To": def_common_word.Def_To, "Learn": def_common_vocab1.Learn, "That": def_common_word.That, "English": def_common_vocab1.English,
+                    "Explain": def_common_vocab1.Explain, "Your": def_animate_pronoun.Your, "Daily": def_date.Daily, "Routine": def_common_vocab1.Routine,
+                    "Another": def_common_word.Another, "Person": def_human.Person }
 
 
 def _check_get_w_class(word):

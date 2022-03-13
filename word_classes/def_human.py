@@ -25,6 +25,11 @@ class Human(Word_Common):
       self.do_eat = True
       self.eaten = eaten
 
+
+class Person(Human):
+   pass
+
+
 class People(Human):
 
    def set_num(self, count):

@@ -3,6 +3,9 @@ from word_classes.def_common_word import Word_Common
 class Def_Day(Word_Common):
    pass
 
+class Daily(Def_Day):
+   pass
+
 
 class Everyday_Life(Word_Common):
    def define(self, sentence, meaning ):

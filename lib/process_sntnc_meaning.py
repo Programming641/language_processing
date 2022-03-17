@@ -181,6 +181,7 @@ class Sentence_Meaning_Processor:
                            for sntnc_i in each_post_cl4inorderto:
                               post_cl4inorderto_l.append( sentence_results[ sntnc_i ] )
                               post_cl4inorderto_l = post_cl4inorderto_l + sentence_results[ sntnc_i ].__dict__[ each_post_cl4inorderto[sntnc_i] ]
+                              skip_sntnc_cmpnt.append( sntnc_i )   
                               
                              
                         print("post_cl4inorderto_l " + str( post_cl4inorderto_l ) )     
@@ -189,7 +190,7 @@ class Sentence_Meaning_Processor:
                         sntnc_nodes[ postcl4inorderto_gnodename ] = post_cl4inorderto_l
                         sntnc_grahs[ useful_gnodename ].add( postcl4inorderto_gnodename )                              
                               
-                              
+                        
                              
                         print("sntnc_grahs " + str( sntnc_grahs ) )      
                               

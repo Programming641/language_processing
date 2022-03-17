@@ -2,6 +2,7 @@ from word_classes.def_common_word import Word_Common
 
 
 
+
 class Human(Word_Common):
    
    

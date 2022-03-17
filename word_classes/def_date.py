@@ -1,10 +1,15 @@
 from word_classes.def_common_word import Word_Common
+from word_classes.def_count import Def_Count
+
 
 class Def_Day(Word_Common):
-   pass
+   # timespan start and end hour, minutes, and seconds
+   timespan = { "start_h": 0, "start_m": 0, "start_s": 0 , "end_h": 23, "end_m": 59, "end_s": 59 }
 
 class Daily(Def_Day):
-   pass
+   day_num = 1
+
+   
 
 
 class Everyday_Life(Word_Common):
@@ -21,3 +26,19 @@ class Daily_Life(Everyday_Life):
 
 class Routine_Life(Everyday_Life):
    pass
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

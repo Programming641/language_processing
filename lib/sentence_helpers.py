@@ -32,3 +32,13 @@ def look4noun( word_pos, words ):
 
 
       next_w_pos_counter += 1
+      
+      
+      
+      
+      
+      
+      
+
+
+

@@ -1,6 +1,6 @@
+from word_classes.def_common_word import Word_Common
 
-
-class Def_Time:
+class Def_Time(Word_Common:
    pass
 
 

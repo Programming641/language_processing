@@ -2,7 +2,7 @@ import nltk
 import sys
 from lib import word_num_helpers, class_helpers
 from lib.multiform_w import Multiform_W
-from word_classes.def_count import Def_Count
+
 from word2number import w2n
 
 
@@ -163,6 +163,8 @@ def fill_w_obj(words, t_w_form):
             preceding_w_pair["number_or"]["number"] -= 1
          
          if preceding_w_pair["number_or"]["number"] == 0:
+         
+            from word_classes.def_count import Def_Count
          
             def_count_obj = Def_Count().set_one_o_o_many(prec_w_numbers)
 

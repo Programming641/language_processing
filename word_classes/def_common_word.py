@@ -3,17 +3,33 @@ from lib import word_helpers
 
 # all word classes should inherit Word_Common
 class Word_Common:
+   word_type = None
+   
    def set_w_form(self, w_form):
       self.w_form = w_form
       
    def get_w_form(self, word, words):
-      return word_helpers.get_word_form( word, words )
+      if hasattr(self, "w_form"):
+         return self.w_form
+      else:
+         return word_helpers.get_word_form( word, words )
+      
+   def get_w_type(self):
+      return word_type
+   
+   
+# all verb classes should inherit Word_Common
+class Verb_Common:
+   def __init__(self):
+      self.capacity = None
+      
 
 
-# in_words is a list containing word objects
+
+# in_noun is a list containing word objects
 class Def_In(Word_Common):
-   def set_in(self, in_words):
-      self.in_words = in_words
+   def set_in(self, in_noun):
+      self.in_noun = in_noun
    
    
    def set_inorderto(self, words):

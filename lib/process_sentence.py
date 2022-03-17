@@ -8,7 +8,7 @@ from word2number import w2n
 class Sentence_Processor:
 
    @classmethod
-   def process_sentence(self,sentence):
+   def process(self,sentence):
       words = nltk.word_tokenize(sentence)
       print (words)
       
@@ -104,8 +104,7 @@ class Sentence_Processor:
 
             
 
-      print("sentence_results ")
-      print(sentence_results)
+      return sentence_results
    
    def most(word_pos, words):
       print("entered most method")
@@ -272,12 +271,13 @@ class Sentence_Processor:
          orderto_v_cl_dict = class_helpers.check_get_w_class(words[word_pos + ano_w_counter])
          orderto_v_cl_name = list(orderto_v_cl_dict.keys())[0]
          orderto_v_obj = orderto_v_cl_dict[ orderto_v_cl_name ]()
+         orderto_list = [ orderto_v_obj ]
 
          # adding "verb"
          in_skip_w[0]["skip_num"] += 1
          in_skip_w.append( word_pos + ano_w_counter )
 
-         in_obj.set_inorderto( orderto_v_obj )       
+         in_obj.set_inorderto( orderto_list )       
          
          return in_obj , in_skip_w
 
